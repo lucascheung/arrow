@@ -4,6 +4,8 @@
   height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
   display: flex;
   align-items: center;
@@ -16,7 +18,7 @@
     display: flex;
     justify-content:center;
     .tagline {
-      padding: 5vh;
+      margin: auto 0;
       display: flex;
       justify-content: center;
       h1 {
@@ -32,7 +34,7 @@
     color: #f7f7f7;
     text-decoration: none;
     font-weight: bolder;
-    padding: 15px 20px;
+    padding: 18px 35px;
     transition: 0.5s ease all;
     &:hover {
       background-color: #b65d56;
@@ -40,3 +42,17 @@
   }
 }
 
+.services-wrapper {
+  height: 100vh;
+  color: white;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  .services-container {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 50vw;
+    text-align: center;
+  }
+}
