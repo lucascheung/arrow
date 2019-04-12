@@ -1,1 +1,42 @@
-// Specific CSS for your home-page
+.banner {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .tagline-box {
+    width: 40vh;
+    height: 40vh;
+    border:6px solid white;
+    margin: 5vh;
+    display: flex;
+    justify-content:center;
+    .tagline {
+      padding: 5vh;
+      display: flex;
+      justify-content: center;
+      h1 {
+        text-align:center;
+        font-size: 6vh;
+        margin: 0;
+      }
+    }
+  }
+  .main-large-btn {
+    border-radius: 4px;
+    background-color: #a5092e;
+    color: #f7f7f7;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 15px 20px;
+    transition: 0.5s ease all;
+    &:hover {
+      background-color: #b65d56;
+    }
+  }
+}
+
