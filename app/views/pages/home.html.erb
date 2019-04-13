@@ -3,11 +3,18 @@
   <div class="banner-content">
     <div class="tagline-box">
       <div class="tagline">
-        <h1>TARGET<br>DRIVEN<br>MEDIA</h1>
+        <h1>TARGET.<br>DRIVEN.<br>MEDIA.</h1>
       </div>
     </div>
     <a href='#' class="main-large-btn">GET IN TOUCH</a>
   </div>
 </div>
 
+<%= render 'about' %>
 <%= render 'services' %>
+<%= render 'clients' %>
+<%= render 'contact' %>
+
+<%= content_for(:after_js) do %>
+  <%= javascript_pack_tag "navbar" %>
+<% end %>

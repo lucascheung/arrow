@@ -25,6 +25,7 @@
         text-align:center;
         font-size: 6vh;
         margin: 0;
+        font-family: 'Heebo', sans-serif;
       }
     }
   }
@@ -35,7 +36,7 @@
     text-decoration: none;
     font-weight: bolder;
     padding: 18px 35px;
-    transition: 0.5s ease all;
+    transition: 0.2s ease all;
     &:hover {
       background-color: #b65d56;
     }
@@ -50,6 +51,51 @@
   background-attachment: fixed;
   background-position: center;
   .services-container {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 50vw;
+    text-align: center;
+  }
+}
+
+.about-wrapper {
+  height: 100vh;
+  color: white;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  .about-container {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 50vw;
+    text-align: center;
+  }
+}
+
+.clients-wrapper {
+  height: 100vh;
+  color: white;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  .clients-container {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 50vw;
+    text-align: center;
+  }
+}
+
+.contact-wrapper {
+  height: 100vh;
+  color: white;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  .contact-container {
     margin: 0 auto;
     padding: 50px 0;
     width: 50vw;
