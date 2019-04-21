@@ -90,15 +90,28 @@
 
 .contact-wrapper {
   height: 100vh;
-  color: white;
+  color: black;
+  background-color: white;
   background-size: cover !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  display: flex;
+  .contact-photo {
+    width: 50%;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('contact.jpg');
+  }
   .contact-container {
     margin: 0 auto;
     padding: 50px 0;
     width: 50vw;
     text-align: center;
+    .contact-form {
+      width:400px;
+      margin: 0 auto;
+      }
   }
 }
