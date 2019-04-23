@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'contact@arrowglobal.io'
+  default from: 'lucas.cheung@arrowglobal.io'
 
   layout 'mailer'
 end
