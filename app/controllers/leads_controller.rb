@@ -2,7 +2,6 @@ class LeadsController < ApplicationController
   def create
     @lead = Lead.new(lead_params)
     @lead.save
-    redirect_to root_path
   end
 
   private

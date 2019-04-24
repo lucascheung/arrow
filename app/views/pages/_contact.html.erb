@@ -3,7 +3,7 @@
   <div class="contact-container d-flex align-items-center">
     <div class="contact-form">
       <h1>CONTACT US</h1>
-      <%= form_for(@lead) do |f| %>
+      <%= form_for @lead, :html => { :onsubmit => "welcome_modal()" } do |f| %>
         <div class="d-flex justify-content-between">
           <div class="form-group">
             <%= f.label :first_name %>
@@ -37,9 +37,12 @@
           <%= f.text_area :message, class: 'form-control big-box', required:true %>
         </div>
 
-        <%= f.submit "Send", class: 'btn-send' %>
+        <%= f.submit "Send", class: 'btn-send', :type => "reset"%>
       <% end %>
     </div>
-
   </div>
 </div>
+
+<%= render 'welcome_modal' %>
+
+
