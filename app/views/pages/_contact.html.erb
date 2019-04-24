@@ -3,7 +3,7 @@
   <div class="contact-container d-flex align-items-center">
     <div class="contact-form">
       <h1>CONTACT US</h1>
-      <%= form_for @lead, :html => { :onsubmit => "welcome_modal()" } do |f| %>
+      <%= form_for @lead, :html => { id:'lead-form' } do |f| %>
         <div class="d-flex justify-content-between">
           <div class="form-group">
             <%= f.label :first_name %>
