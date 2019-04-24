@@ -26,6 +26,19 @@
         font-size: 6vh;
         margin: 0;
         font-family: 'Heebo', sans-serif;
+        display: inline-block;
+        overflow: hidden;
+        animation: typing 0.5s steps(8, end), blink .75s step-end infinite;
+        white-space: nowrap;
+        box-sizing: border-box;
+      }
+      @keyframes typing {
+        from {
+            width: 0%
+        }
+        to {
+            width: 100%
+        }
       }
     }
   }
@@ -55,6 +68,17 @@
     padding: 50px 0;
     width: 50vw;
     text-align: center;
+  }
+}
+
+.intro-wrapper {
+  padding: 10vh 50vh;
+  background-color: #112c3e;
+  color: #e2e2e2;
+  text-align: center;
+  border-bottom: 6px solid #b10909;
+  h1 {
+    font-size: 1.7rem;
   }
 }
 
