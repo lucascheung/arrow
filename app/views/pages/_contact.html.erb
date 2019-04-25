@@ -37,7 +37,7 @@
           <%= f.text_area :message, class: 'form-control big-box', required:true %>
         </div>
 
-        <%= f.submit "Send", class: 'btn-send'%>
+        <%= f.submit "Send", class: 'btn-send', 'data-toggle' => 'modal', 'data-target' => "#welcome-modal" %>
       <% end %>
     </div>
   </div>

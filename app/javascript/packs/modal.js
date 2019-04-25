@@ -1,5 +1,6 @@
-function openModal() {
+function resetForm() {
   console.log('alkfjdhslakfjdsa');
+  $('#myModal').reset();
 }
 
-openModal();
+$('#lead-form').on('submit', resetForm());
