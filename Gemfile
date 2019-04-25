@@ -15,6 +15,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'postmark-rails'
+gem 'ruby-trello'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
