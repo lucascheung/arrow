@@ -6,8 +6,6 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-TRELLO_API_KEY = ENV['TRELLO_API_KEY']
-
 module Arrow
   class Application < Rails::Application
     config.generators do |generate|

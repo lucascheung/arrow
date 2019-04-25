@@ -1,6 +1,5 @@
 require 'uri'
 require 'net/http'
-require 'dotenv/rails-now'
 
 class LeadsController < ApplicationController
   def create
