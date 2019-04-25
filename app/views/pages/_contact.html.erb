@@ -22,16 +22,17 @@
           <%= f.text_field :email, class: 'form-control', required:true %>
         </div>
 
-        <div class="form-group">
-          <%= f.label :company, "Company (Optional)" %>
-          <%= f.text_field :company, class: 'form-control' %>
-        </div>
+        <div class="d-flex justify-content-between">
+          <div class="form-group">
+            <%= f.label :company, "Company (Optional)" %>
+            <%= f.text_field :company, class: 'form-control' %>
+          </div>
 
-        <div class="form-group">
-          <%= f.label :phone_number, "Phone Number (Optional)" %>
-          <%= f.text_field :phone_number, class: 'form-control' %>
+          <div class="form-group">
+            <%= f.label :phone_number, "Phone Number (Optional)" %>
+            <%= f.text_field :phone_number, class: 'form-control' %>
+          </div>
         </div>
-
         <div class="form-group">
           <%= f.label :message %>
           <%= f.text_area :message, class: 'form-control big-box', required:true %>
