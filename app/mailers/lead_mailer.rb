@@ -10,4 +10,11 @@ class LeadMailer < ApplicationMailer
 
     mail(to: @lead.email, subject: 'We will be in touch soon!')
   end
+
+  def new_lead(lead)
+    @lead = lead
+
+    mail(to: 'lucascheung5+acx7d638zaxmrbvcayvm@boards.trello.com', subject: "#{@lead.first_name}")
+    mail(to: 'lucas.cheung@arrowglobal.io', subject: "New Lead - #{@lead.first_name}")
+  end
 end

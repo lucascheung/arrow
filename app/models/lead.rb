@@ -8,5 +8,6 @@ class Lead < ApplicationRecord
 
   def send_welcome_email
     LeadMailer.welcome(self).deliver_now
+    LeadMailer.new_lead(self).deliver_now
   end
 end
