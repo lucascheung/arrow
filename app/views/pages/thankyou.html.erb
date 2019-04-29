@@ -1,0 +1,8 @@
+<%= render 'shared/navbar' %>
+<h1>Thanks for signing up!</h1>
+<%= render 'shared/footer' %>
+
+<%= content_for(:after_js) do %>
+  <%= javascript_pack_tag "navbar" %>
+  <%= javascript_pack_tag "modal" %>
+<% end %>
